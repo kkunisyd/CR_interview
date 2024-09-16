@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Review Sessions</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Students Allocation</h2>
+    
+    <!-- Labels Row -->
+    <div class="row mb-2">
+      <div class="col-md-3">
+        <label for="current-student-red" class="form-label">Current Student Name</label>
+      </div>
+      <div class="col-md-3">
+        <label for="next-student-red" class="form-label">Next Student Name</label>
+      </div>
+      <div class="col-md-3">
+        <label for="tutor-red" class="form-label">Tutor Name</label>
+      </div>
+      <div class="col-md-3">
+        <label for="location-red" class="form-label">Location</label>
+      </div>
+    </div>
+
+    <form>
+      <!-- Row 1 - Red -->
+      <div class="row mb-3" id="row-red">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-red" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-red" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-red" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-red" placeholder="Location" />
+        </div>
+      </div>
+
+      <!-- Row 2 - Pink -->
+      <div class="row mb-3" id="row-pink">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-pink" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-pink" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-pink" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-pink" placeholder="Location" />
+        </div>
+      </div>
+
+      <!-- Row 3 - Blue -->
+      <div class="row mb-3" id="row-blue">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-blue" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-blue" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-blue" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-blue" placeholder="Location" />
+        </div>
+      </div>
+
+      <!-- Row 4 - Orange -->
+      <div class="row mb-3" id="row-orange">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-orange" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-orange" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-orange" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-orange" placeholder="Location" />
+        </div>
+      </div>
+
+      <!-- Row 5 - Green -->
+      <div class="row mb-3" id="row-green">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-green" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-green" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-green" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-green" placeholder="Location" />
+        </div>
+      </div>
+
+      <!-- Row 6 - Yellow -->
+      <div class="row mb-3" id="row-yellow">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-yellow" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-yellow" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-yellow" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-yellow" placeholder="Location" />
+        </div>
+      </div>
+
+      <!-- Row 7 - White -->
+      <div class="row mb-3" id="row-white">
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="current-student-white" placeholder="Current Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="next-student-white" placeholder="Next Student Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="tutor-white" placeholder="Tutor Name" />
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="location-white" placeholder="Location" />
+        </div>
+      </div>
+    </form>
+  </div>
+<audio src="/static/alert.mp3" id="alert"></audio>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    setInterval(() => {
+        update();
+    }, 3000);
+    function update(){
+        const alert = document.getElementById("alert");
+        const colours = ["red", "pink", "blue", "orange", "green", "yellow", "white"];
+        colours.forEach(colour => {
+           fetch(`/${colour}/now`)
+           .then(response=> response.text())
+           .then(data => {
+                let current = document.getElementById(`current-student-${colour}`)
+                if(current.value != data){
+                    if(current.value!="")
+                        alert.play();
+                    current.value = data;
+
+                }
+            });
+
+           fetch(`/${colour}/next`)
+           .then(response=> response.text())
+           .then(data => document.getElementById(`next-student-${colour}`).value = data);
+        });
+
+        
+    }
+  </script>
+</body>
+</html>
